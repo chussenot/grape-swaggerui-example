@@ -51,6 +51,7 @@ end
 gem 'grape',          '~> 0.6.1'
 gem 'grape-entity',   '~> 0.3.0'
 gem 'grape-swagger',  '~> 0.6.0'
+gem 'rack-cors',      '~> 0.2.8'
 
 # Utilities to populate database
 group :development do
