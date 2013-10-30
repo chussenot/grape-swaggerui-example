@@ -26,4 +26,9 @@ $ ->
         console.log "Unable to Load SwaggerUI"
         console.log data
     docExpansion: "list"
+  # If you have a Basic Authentication on your API endpoint
+  #window.authorizations.add(
+    #"Basic",
+    #new PasswordAuthorization("basic_auth", 'hello', 'world')
+  #)
   swaggerUi.load()

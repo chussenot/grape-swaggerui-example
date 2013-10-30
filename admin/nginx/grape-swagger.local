@@ -11,6 +11,19 @@ server {
   set $rails_root  		/home/af83/dev/grape-swagger ;
 
   location / {
+    if ($request_method = OPTIONS ) {
+      add_header Content-Length 0;
+      add_header Content-Type text/plain;
+      add_header Access-Control-Allow-Origin *;
+      add_header Access-Control-Allow-Headers 'origin, authorization';
+      add_header Access-Control-Allow-Methods 'GET, POST, PUT, DELETE, OPTIONS';
+      return 200;
+    }
+
+    # Basic Authentication needed?
+    #auth_basic "Private Area";
+    #auth_basic_user_file $rails_root/htpasswd;
+
     root $rails_root/public ;
     try_files /maintenance.html $uri $uri/index.html $uri.html @app ;
   }
