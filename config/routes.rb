@@ -61,4 +61,5 @@ GrapeSwagger::Application.routes.draw do
 
   # API documentation
   get 'doc', to: 'doc#index'
+  root to: 'doc#index'
 end
