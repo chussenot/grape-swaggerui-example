@@ -39,7 +39,7 @@ GrapeSwagger::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -53,4 +53,12 @@ GrapeSwagger::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # API endpoint
+  constraints subdomain: /^api(\.\w)*/ do
+    mount BaseApi => '/'
+  end
+
+  # API documentation
+  get 'doc', to: 'doc#index'
 end
