@@ -23,6 +23,8 @@ Populate the database with some bands and members :
 Copy the nginx virtual host :
 `cp admin/nginx/grape-swagger.local /etc/nginx/site-availables/`
 
+Update the variable `$rails_root` in the virtual host config.
+
 Restart nginx.
 
 Add hosts to your `/etc/hosts` :
