@@ -46,3 +46,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Utilities to populate database
+group :development do
+  gem 'ffaker'
+end
