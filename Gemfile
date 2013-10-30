@@ -47,6 +47,11 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Api
+gem 'grape',          '~> 0.6.1'
+gem 'grape-entity',   '~> 0.3.0'
+gem 'grape-swagger',  '~> 0.6.0'
+
 # Utilities to populate database
 group :development do
   gem 'ffaker'
