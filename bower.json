@@ -1,0 +1,12 @@
+{
+  "name": "grape-swagger",
+  "version": "0.0.0",
+  "authors": [
+    "klacointe <klacointe@af83.com>"
+  ],
+  "dependencies": {
+    "swagger-ui": "git://github.com/wordnik/swagger-ui"
+  },
+  "license": "MIT",
+  "private": true
+}
